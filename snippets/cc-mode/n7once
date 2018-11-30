@@ -1,0 +1,13 @@
+#name : N7Space #ifndef XXX; #define XXX; #endif
+# key: n7once
+# --
+// N7 Space Sp. z o.o.
+// http://www.n7space.com
+// COPYRIGHT (C) `(format-time-string "%Y")`
+
+#ifndef ${1:`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H}
+#define $1
+
+$0
+
+#endif // $1
