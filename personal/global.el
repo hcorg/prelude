@@ -1,2 +1,3 @@
 (global-subword-mode)
-(scroll-bar-mode -1)
+(scroll-bar-mode nil)
+(show-paren-mode t) ; highlight matching parentheses
