@@ -1,11 +1,13 @@
 (prelude-require-packages '(groovy-mode))
 
 (setq jenkinsfile-mode-font-lock-keywords
+      
       `(("pipeline" . font-lock-preprocessor-face)
         ("agent\\|post\\|stages\\|steps" . font-lock-builtin-face)
         (,(regexp-opt '("environment" "options" "parameters"
                         "triggers" "stage" "tools" "input"
-                        "when" "parallel" "script") 'symbols)
+                        "when" "parallel" "script"
+                        "matrix" "axis" "axes" "exclude" "excludes") 'symbols)
          . font-lock-constant-face)
         (,(regexp-opt '("always" "changed" "fixed"
                         "regression" "aborted" "failure" "success"
