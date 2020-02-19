@@ -1,4 +1,5 @@
 (prelude-require-packages '(groovy-mode))
+(require 'groovy-mode)
 
 (setq jenkinsfile-mode-font-lock-keywords
       
