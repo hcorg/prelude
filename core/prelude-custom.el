@@ -4,8 +4,6 @@
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/prelude
-;; Version: 1.0.0
-;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
 
@@ -80,6 +78,12 @@ in the desired elisp file."
   '(conf-mode coffee-mode haml-mode python-mode slim-mode yaml-mode)
   "Modes for which auto-indenting is suppressed."
   :type 'list
+  :group 'prelude)
+
+(defcustom prelude-format-on-save t
+  "Run mode specific format on file before it's saved.
+Currently only applies to tide-mode."
+  :type 'boolean
   :group 'prelude)
 
 (defcustom prelude-yank-indent-modes '(LaTeX-mode TeX-mode)
