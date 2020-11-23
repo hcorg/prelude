@@ -36,6 +36,21 @@
   :prefix "prelude-"
   :group 'convenience)
 
+(defcustom prelude-minimalistic-ui nil
+  "Controls whether to display the menu-bar and line numbers.
+Note that the toolbar is always hidden regardless of this setting."
+  :type 'boolean
+  :group 'prelude
+  :package-version '(prelude . "1.1"))
+
+(defcustom prelude-super-keybindings t
+  "Controls whether to use the Super key in keybindings.
+They can be problematic in some operating systems (e.g. Windows)
+or desktop environments that make heavy use of them."
+  :type 'boolean
+  :group 'prelude
+  :package-version '(prelude . "1.1"))
+
 (defcustom prelude-auto-save t
   "Non-nil values enable Prelude's auto save."
   :type 'boolean
@@ -69,7 +84,7 @@ Prelude recommends you only put personal customizations in the
 personal folder.  This variable allows you to specify a specific
 folder as the one that should be visited when running
 `crux-find-user-init-file'.  This can be easily set to the desired buffer
-in lisp by putting `(setq prelude-user-init-file load-file-name)'
+in Lisp by putting `(setq prelude-user-init-file load-file-name)'
 in the desired elisp file."
   :type 'string
   :group 'prelude)
