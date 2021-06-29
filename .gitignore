@@ -26,5 +26,7 @@ network-security.data
 prelude-cheatsheet.el
 prelude-cheatsheet.aux
 prelude-cheatsheet.log
-/anaconda-mode
-/transient
+transient/
+var/
+.cache/
+.lsp-session*
