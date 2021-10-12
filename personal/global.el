@@ -6,3 +6,5 @@
 
 (global-set-key (kbd "s-c") 'compile)
 (global-set-key (kbd "s-f") 'find-grep)
+
+(set-face-attribute 'default nil :height 120)
