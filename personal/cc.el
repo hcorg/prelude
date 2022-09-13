@@ -5,7 +5,7 @@
 (add-to-list 'auto-mode-alist (cons include-base-dir 'c++-mode))
 
 (defun my-cc-whitespace ()
-  (setq tab-width 4)
+  (setq tab-width 2)
   (whitespace-toggle-options '(tabs tab-mark))
   )
 
@@ -25,6 +25,7 @@
 
 (defun my-cxx-style ()
   (c-set-offset 'innamespace [0])
+  (c-set-offset 'inextern-lang [0])
   )
 
 (add-hook 'c++-mode-hook 'my-cxx-style)
