@@ -1,0 +1,9 @@
+#name : __cplusplus endif
+# key: cplusend
+# --
+
+$0
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
