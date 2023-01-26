@@ -5,6 +5,6 @@
 (show-paren-mode t) ; highlight matching parentheses
 
 (global-set-key (kbd "s-c") 'compile)
-(global-set-key (kbd "s-f") 'find-grep)
+(global-set-key (kbd "s-f") 'lgrep)
 
 (set-face-attribute 'default nil :height 120)
