@@ -2,7 +2,7 @@
 #name: Doxygen group
 #key: doxgroup
 # --
-/// @addtogroup  ${1:Group name}
+/// @addtogroup ${1:Group name}
 /// @{
 
 $0
