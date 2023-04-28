@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+#name: Doxygen group
+#key: doxgroup
+# --
+/// @addtogroup  ${1:Group name}
+/// @{
+
+$0
+
+/// @}
