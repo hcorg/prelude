@@ -1,8 +1,8 @@
 ;; headers as c++
 (setq include-base-dir "/usr/include/")
 
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-(add-to-list 'auto-mode-alist (cons include-base-dir 'c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-ts-mode))
+(add-to-list 'auto-mode-alist (cons include-base-dir 'c++-ts-mode))
 
 (defun my-cc-whitespace ()
   (setq tab-width 2)
@@ -12,6 +12,8 @@
 ;; doesn't work when added to cc-mode-hook
 (add-hook 'c++-mode-hook 'my-cc-whitespace)
 (add-hook 'c-mode-hook 'my-cc-whitespace)
+(add-hook 'c++-ts-mode-hook 'my-cc-whitespace)
+(add-hook 'c-ts-mode-hook 'my-cc-whitespace)
 
 ;; style settings
 (defun my-cc-style ()
@@ -29,3 +31,12 @@
   )
 
 (add-hook 'c++-mode-hook 'my-cxx-style)
+
+(defun my-cc-ts-style ()
+  (setq indent-tabs-mode nil
+        c-ts-mode-indent-offset 2
+        c-ts-mode-indent-style "bsd")
+  )
+
+(add-hook 'c-ts-mode-hook 'my-cc-ts-style)
+(add-hook 'c++-ts-mode-hook 'my-cc-ts-style)
