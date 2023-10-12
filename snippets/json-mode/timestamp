@@ -1,0 +1,5 @@
+#name : timestamper
+# key: ts
+# --
+
+`(format-time-string "%FT%T%z")`
