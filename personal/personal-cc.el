@@ -1,3 +1,6 @@
+(prelude-require-packages '(cmake-mode
+                            ))
+
 ;; headers as c++
 (setq include-base-dir "/usr/include/")
 
