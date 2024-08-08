@@ -4,8 +4,8 @@
 ;; headers as c++
 (setq include-base-dir "/usr/include/")
 
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-(add-to-list 'auto-mode-alist (cons include-base-dir 'c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-ts-mode))
+(add-to-list 'auto-mode-alist (cons include-base-dir 'c++-ts-mode))
 
 (defun my-cc-whitespace ()
   (setq tab-width 2)
