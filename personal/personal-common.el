@@ -7,4 +7,5 @@
 (global-set-key (kbd "s-c") 'compile)
 (global-set-key (kbd "s-f") 'rgrep)
 
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :font "Source Code Pro" :height 120)
+
