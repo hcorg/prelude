@@ -36,6 +36,7 @@
 (add-hook 'c++-mode-hook #'lsp)
 (add-hook 'go-mode-hook #'lsp)
 (add-hook 'rust-mode-hook #'lsp)
+(add-hook 'python-mode-hook #'lsp)
 
 (setq lsp-clients-clangd-args
       '("-j=2"

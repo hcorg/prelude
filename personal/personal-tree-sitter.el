@@ -10,3 +10,4 @@
 (setq c++-ts-mode-hook c++-mode-hook)
 (setq go-ts-mode-hook go-mode-hook)
 (setq rust-ts-mode-hook rust-mode-hook)
+(setq python-ts-mode-hook python-mode-hook)
