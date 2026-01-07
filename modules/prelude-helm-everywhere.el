@@ -32,7 +32,6 @@
 
 ;;; Code:
 (require 'prelude-helm)
-(prelude-require-packages '(helm-descbinds helm-ag))
 (require 'helm-eshell)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -63,8 +62,9 @@
 (helm-descbinds-mode)
 (helm-mode 1)
 
-;; enable Helm version of Projectile with replacment commands
-(helm-projectile-on)
+(when prelude-projectile
+      ;; enable Helm version of Projectile with replacment commands
+      (helm-projectile-on))
 
 (provide 'prelude-helm-everywhere)
 ;; prelude-helm-everywhere.el ends here.
