@@ -25,6 +25,8 @@
 (define-key lsp-ui-mode-map (kbd "C-c C-l d") 'lsp-describe-thing-at-point)
 (define-key lsp-ui-mode-map (kbd "C-c C-l f") 'lsp-format-buffer)
 (define-key lsp-ui-mode-map (kbd "C-c C-l e") 'helm-lsp-code-actions)
+(define-key lsp-ui-mode-map (kbd "C-c C-l g a") 'xref-find-apropos)
+(define-key lsp-ui-mode-map (kbd "C-c C-l g h") 'lsp-treemacs-call-hierarchy)
 
 (setq lsp-prefer-flymake nil)
 ;; (setq lsp-ui-sideline-enable t)

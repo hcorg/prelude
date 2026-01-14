@@ -34,3 +34,4 @@ gotools/
 eln-cache/
 tree-sitter
 .mc-lists.el
+/request

@@ -33,6 +33,7 @@
 ;;; Code:
 (require 'prelude-helm)
 (require 'helm-eshell)
+(prelude-require-package 'helm-descbinds)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-m") 'helm-M-x)

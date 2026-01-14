@@ -1,7 +1,9 @@
-(prelude-require-packages '(helm-swoop
-                            ))
+;(prelude-require-packages '(helm-swoop
+;                            ))
 
 (require 'helm)
+
+(add-to-list 'load-path "~/.emacs.d/personal/helm-swoop")
 (require 'helm-swoop)
 
 (global-set-key (kbd "M-i") 'helm-swoop)
